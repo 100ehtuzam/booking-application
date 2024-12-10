@@ -30,8 +30,11 @@ app.use('/student', studentRoutes);
 
 
 // Start the server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+app.keepAliveTimeout = 120000; // 120 seconds
+app.headersTimeout = 120000;
 
 module.exports = app;
