@@ -1,5 +1,5 @@
 {
-  "homepage": "https://100ehtuzam.github.io/booking-application",
+  "homepage": "/",
   "name": "student-management",
   "version": "0.1.0",
   "private": true,
@@ -45,5 +45,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  }
+  },
+  
+  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+  
+  
 }
