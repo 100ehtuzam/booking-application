@@ -16,7 +16,7 @@ app.use(express.json());  // Parse JSON bodies
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-connectMongoDB('mongodb://localhost/student_management');
+connectMongoDB('mongodb+srv://ehtu1511:Ece2014@100@booking-app.mokaf.mongodb.net/?retryWrites=true&w=majority&appName=booking-app');
 
 app.get('/ping',(req,res)=>{
   res.send('PONG');
