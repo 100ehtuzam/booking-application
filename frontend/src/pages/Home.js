@@ -16,7 +16,7 @@ function Home() {
   const fetchStudents = async () => {
     try {
       console.log("in Fetch API");
-      const url = "http://localhost:8080/student";
+      const url = "https://booking-application-okby.onrender.com/student";
       const headers = {
         headers: { authorization: localStorage.getItem("token") },
       };

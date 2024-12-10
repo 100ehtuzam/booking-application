@@ -33,7 +33,7 @@ function Signup() {
       return handleError('name, email, password are required')
     }
     try {
-      const url = 'http://localhost:8080/auth/signup'
+      const url = 'https://booking-application-okby.onrender.com/auth/signup'
       const  response = await fetch(url,{
         method: 'POST',
         headers:{'content-type':'application/json'},

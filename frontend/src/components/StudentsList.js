@@ -26,7 +26,7 @@ const StudentsList = ({ students, fetchStudents, setStudentsToEdit }) => {
     const headers = {
       headers : {'authorization' : localStorage.getItem('token')}
     }
-    await axios.delete(`http://localhost:8080/student/${id}`,headers);
+    await axios.delete(`https://booking-application-okby.onrender.com/student/${id}`,headers);
     fetchStudents();
   };
 

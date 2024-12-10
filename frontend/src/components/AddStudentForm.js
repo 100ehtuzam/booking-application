@@ -47,7 +47,7 @@ const AddStudentForm = ({
       } else {
         //Add New Student
         console.log('Token: ',localStorage.getItem('token'));
-        const url = "http://localhost:8080/student";
+        const url = "https://booking-application-okby.onrender.com/student";
         const headers = {
           headers : {'authorization' : localStorage.getItem('token')}
         }
